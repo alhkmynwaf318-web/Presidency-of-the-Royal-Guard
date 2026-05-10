@@ -1,0 +1,33 @@
+<!-- قسم القيادة (رئيس الحرس الملكي) -->
+<section class="leadership-section">
+    <h2 class="title-decor"><span>قيادة الحرس الملكي</span></h2>
+    <div class="leadership-grid">
+        <!-- الرئيس -->
+        <div class="leader-box">
+            <i class="fas fa-shield-halved"></i>
+            <div class="leader-info">
+                <span class="rank">رئيس الحرس الملكي</span>
+                <span class="name">نواف الحكمي</span>
+                <span class="discord-tag"><i class="fab fa-discord"></i> nawaf8203</span>
+            </div>
+        </div>
+        <!-- النائب -->
+        <div class="leader-box">
+            <i class="fas fa-user-slash"></i>
+            <div class="leader-info">
+                <span class="rank">نائب رئيس الحرس الملكي</span>
+                <span class="name">لا يوجد</span>
+                <span class="discord-tag">قيد التعيين</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- قسم الإدارة -->
+<section class="info-section">
+    <h2 class="title-decor"><span>الإدارة العامة</span></h2>
+    <div class="info-card">
+        <h3>نظام الرقابة العسكرية</h3>
+        <p>إدارة الحرس الملكي المسؤولة عن حماية منشآت وزارة العدل وفرض النظام.</p>
+    </div>
+</section>
