@@ -1,0 +1,30 @@
+:root {
+    /* التعديل الجديد: أخضر عسكري غامق وفاتح */
+    --primary-color: #2e7d32; /* الأخضر الملكي */
+    --accent-color: #4caf50;  /* أخضر فاتح للتوهج */
+    --bg-dark: #050505;       /* أسود خالص */
+    --card-bg: rgba(20, 30, 20, 0.6); /* خلفية بطاقات مائلة للأخضر */
+    --text-light: #ffffff;
+}
+
+/* تعديل أيقونة الميزان لتناسب الحرس الملكي (اختياري يمكنك تغيير الأيقونة في HTML) */
+.justice-logo i {
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 15px rgba(46, 125, 50, 0.5));
+}
+
+/* تعديل الأزرار لتصبح خضراء */
+.btn-link {
+    border: 1px solid var(--primary-color);
+}
+
+.btn-link:hover {
+    background: var(--primary-color); /* عند التمرير يصبح أخضر */
+    box-shadow: 0 0 20px rgba(46, 125, 50, 0.4);
+    color: #fff;
+}
+
+/* تعديل خطوط الجوانب للبطاقات */
+.info-card {
+    border-right: 3px solid var(--primary-color);
+}
