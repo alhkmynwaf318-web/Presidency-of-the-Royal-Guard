@@ -3,59 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رئاسة الحرس الملكي KR</title>
+    <title>بوابة الحرس الملكي | نظام شؤون الدورة</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-    <div class="container">
+    <div id="particles-js"></div>
+
+    <div class="content-wrapper">
         <header>
+            <div class="logo">
+                <i class="fa-solid fa-crown"></i> </div>
             <h1>موقع رئاسة الحرس الملكي KR</h1>
-            <p>المنصة الرسمية لإدارة شؤون الدورة ومنسوبي الحرس</p>
+            <p class="subtitle">المنصة الرسمية لإدارة شؤون الدورة</p>
+            <p class="respect">RESPECT FIRST</p>
         </header>
 
-        <section class="about-course">
-            <h2><i class="fa-solid fa-star"></i> تعريف الدورة</h2>
-            <p>تعد دورة رئاسة الحرس الملكي برنامجاً تدريبياً مكثفاً يهدف إلى إعداد وتأهيل الكوادر العسكرية بأعلى المعايير، لضمان تنفيذ المهام الأمنية والتشريفية بدقة واحترافية عالية داخل السيرفر.</p>
+        <section class="leadership">
+            <h2>القيادة</h2>
+            <div class="leadership-cards">
+                <div class="leader-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <p class="leader-rank">رئيس رئاسة الحرس الملكي</p>
+                    <p class="leader-name">نواف الحكمي</p>
+                    <div class="leader-discord">
+                        <i class="fa-brands fa-discord"></i> nawaf8203
+                    </div>
+                </div>
+                </div>
         </section>
 
-        <div class="main-buttons">
-            <a href="#" class="btn">تقديم</a>
-            <a href="#" class="btn">لائحة رئاسة الحرس الملكي</a>
-            <a href="#" class="btn">طلب ترقية</a>
-        </div>
-
-        <div class="stats-cards">
-            <div class="card">
-                <i class="fa-solid fa-users-gear"></i>
-                <h3>عدد الإدارة</h3>
-                <p class="count">3</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-person-military-to-person"></i>
-                <h3>عدد أعضاء الدورة</h3>
-                <p class="count">0</p>
-            </div>
-        </div>
-
-        <section class="admin-section">
-            <h2><i class="fa-brands fa-discord"></i> إدارة الدورة</h2>
-            <div class="admin-card">
-                <div class="admin-info">
-                    <span class="rank">رئيس رئاسة الحرس الملكي</span>
-                    <span class="name">نواف الحكمي</span>
-                </div>
-                <div class="discord-tag">
-                    <i class="fa-brands fa-discord"></i> nawaf8203
-                </div>
+        <section class="course-intro-section">
+            <div class="course-intro-card">
+                <h2><i class="fa-solid fa-star"></i> تعريف الدورة</h2>
+                <p>تعد دورة رئاسة الحرس الملكي برنامجاً تدريبياً مكثفاً يهدف إلى إعداد وتأهيل الكوادر العسكرية بأعلى المعايير، لضمان تنفيذ المهام الأمنية والتشريفية بدقة واحترافية عالية داخل السيرفر.</p>
             </div>
         </section>
 
-        <div class="image-section">
-            <img src="military_banner.jpg" alt="الحرس الملكي">
+        <div class="services-buttons">
+            <a href="#" class="service-btn"><i class="fa-solid fa-file-signature"></i> تقديم</a>
+            <a href="#" class="service-btn"><i class="fa-solid fa-gavel"></i> لائحة رئاسة الحرس الملكي</a>
+            <a href="#" class="service-btn"><i class="fa-solid fa-arrow-up-right-dots"></i> طلب ترقية</a>
         </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <p class="stat-count">3</p>
+                <p class="stat-label">عدد الإدارة</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-count">1</p> <p class="stat-label">عدد أعضاء الدورة</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-count">1,250</p>
+                <p class="stat-label">زوار الموقع</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 رئاسة الحرس الملكي - جميع الحقوق محفوظة</p>
+        </footer>
     </div>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 150, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 2, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#c4a36f", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } }
+            },
+            "retina_detect": true
+        });
+    </script>
 
 </body>
 </html>
